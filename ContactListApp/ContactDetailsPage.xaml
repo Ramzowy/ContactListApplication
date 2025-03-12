@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ContactListApp.ContactDetailsPage"
+             Title="ContactDetailsPage">
+
+    <ScrollView>
+        <StackLayout Padding="20" Spacing="20">
+
+            <Frame>
+                <Button Text="Back" Clicked="OnBackButtonClicked" HorizontalOptions="Start" BackgroundColor="#6200EE" TextColor="White"/>
+            </Frame>
+            
+            <Label Text="{Binding name}" FontSize="Title" FontAttributes="Bold" HorizontalOptions="Center" TextColor="#6200EE"/>
+
+            <BoxView Color="LightGray" HeightRequest="1" HorizontalOptions="Fill"/>
+
+            <Frame>
+                <Label Text="Email" FontSize="Caption" TextColor="Gray" Margin="20"/>
+            </Frame>
+
+            <Label Text="{Binding email}" FontSize="Body" TextColor="Black" Margin="20"/>
+
+            <Frame>
+                <Label Text="Phone Number" FontSize="Caption" TextColor="Gray" Margin="20"/>
+            </Frame>
+
+            <Label Text="{Binding phoneNumber}" FontSize="Medium" TextColor="Gray" Margin="20"/>
+
+            <Frame>
+                <Label Text="Description" FontSize="Caption" TextColor="Gray" Margin="20"/>
+            </Frame>
+
+            <Label Text="{Binding description}" FontSize="Medium" TextColor="Black" Margin="20"/>
+
+        </StackLayout>
+        
+    </ScrollView>
+    
+    
+</ContentPage>
